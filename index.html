@@ -7,42 +7,47 @@
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #d8b4f8, #fbcfe8);
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* full layar */
+            margin: 0;
         }
         .card {
             background: white;
-            padding: 25px;
-            margin: 50px auto;
-            width: 350px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            padding: 30px;
+            width: 90%; /* hampir full layar */
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
         }
         img {
-            width: 150px; /* diperbesar */
-            height: 150px;
-            border-radius: 50%; /* tetap bulat */
-            object-fit: cover; /* biar tidak gepeng */
-            border: 4px solid #c084fc;
+            width: 200px; /* diperbesar lagi */
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #c084fc;
+            margin-bottom: 10px;
         }
         h2 {
             margin: 15px 0;
             color: #7e22ce;
-            font-size: 24px; /* diperbesar */
+            font-size: 28px;
         }
         p {
-            margin: 8px 0;
+            margin: 10px 0;
             color: #444;
-            font-size: 16px; /* diperbesar */
+            font-size: 18px;
         }
         strong {
             color: #a21caf;
-            font-size: 17px;
+            font-size: 19px;
         }
         a {
             color: #ec4899;
             text-decoration: none;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
         }
         a:hover {
             text-decoration: underline;
