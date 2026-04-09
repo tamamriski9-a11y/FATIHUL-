@@ -7,55 +7,69 @@
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #d8b4f8, #fbcfe8);
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
+
         .card {
             background: white;
-            padding: 50px;
-            width: 100%; /* diperbesar lagi */
-            max-width: 700px;
+            width: 80%;
+            max-width: 800px;
             border-radius: 25px;
-            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             border: 5px solid #c084fc;
+            overflow: hidden;
             text-align: center;
         }
-        img {
-            img {
-    width: 264px;
-    height: 264px;
-    border-radius: 0; /* tetap kotak */
-    object-fit: cover;
-    border: 6px solid #c084fc;
+
+        .header {
+            background: linear-gradient(135deg, #c084fc, #f472b6);
+            padding: 40px 20px;
         }
+
+        .header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 0; /* kotak */
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
         h2 {
-            margin: 15px 0;
+            margin: 10px 0;
             color: #7e22ce;
-            font-size: 32px;
+            font-size: 30px;
             text-transform: uppercase;
         }
+
         p {
-            margin: 12px 0;
-            color: #444;
+            margin: 10px 0;
             font-size: 20px;
+            color: #444;
             text-transform: uppercase;
         }
+
         strong {
             color: #a21caf;
-            font-size: 21px;
         }
-        .ig-label {
-            text-transform: none; /* biar "Instagram" tidak kapital semua */
+
+        .ig {
+            text-transform: none;
         }
+
         a {
             color: #ec4899;
             text-decoration: none;
             font-weight: bold;
-            font-size: 20px;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -64,14 +78,19 @@
 <body>
 
 <div class="card">
-    <img src="foto-profil.jpg" alt="Foto Profil">
-    <h2>Fatihul Barizah</h2>
-    <p><strong>Kelas:</strong> XII TJKT 1</p>
-    <p><strong>Hobi:</strong> Membaca</p>
-    <p><strong>Cita-cita:</strong> Pengusaha</p>
-    <p class="ig-label"><strong>Instagram:</strong><br>
-        <a href="https://instagram.com/zaa_zyyaa" target="_blank">@zaa_zyyaa</a>
-    </p>
+    <div class="header">
+        <img src="foto-profil.jpg" alt="Foto Profil">
+    </div>
+
+    <div class="content">
+        <h2>Fatihul Barizah</h2>
+        <p><strong>Kelas:</strong> XII TJKT 1</p>
+        <p><strong>Hobi:</strong> Membaca</p>
+        <p><strong>Cita-cita:</strong> Pengusaha</p>
+        <p class="ig"><strong>Instagram:</strong><br>
+            <a href="https://instagram.com/zaa_zyyaa" target="_blank">@zaa_zyyaa</a>
+        </p>
+    </div>
 </div>
 
 </body>
